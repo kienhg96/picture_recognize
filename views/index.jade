@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div.container
+		form.form-inline(method="post", action="/upload", enctype="multipart/form-data")
+			span.btn.btn-default.btn-file
+				input(type="file", name="image", id="fileToUpload" accept="image/*" required)
+			input.btn.btn-primary.btnSubmit(type="submit", value="Upload Image", name="submit")
+		div#contents
+	script(src="/javascripts/index.js")

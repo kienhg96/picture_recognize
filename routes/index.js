@@ -14,7 +14,7 @@ cloudinary.config({
 module.exports = function(upload) {
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
-	  res.render('index.html');
+	  res.render('index', {title: 'Home'});
 	});
 
 	router.post('/upload', upload.single('image'), function(req, res){
