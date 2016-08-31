@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+	<div class="container">
+		<form class="form-inline" method="post" action="/upload" enctype="multipart/form-data">
+				<span class="btn btn-default btn-file">
+	    			<input type="file" name="image" id="fileToUpload" required>
+				</span>
+	    		<input class="btn btn-primary btnSubmit" type="submit" value="Upload Image" name="submit">	
+		</form>
+		<div id="contents"></div>
+	</div>
+	<script src="/javascripts/index.js"></script>
+</body>
+</html>
